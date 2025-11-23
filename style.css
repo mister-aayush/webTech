@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+
+.box{
+display: flex;
+
+}
+.box1,.box2,.box3{
+
+    height: 100px;
+    width: 100px;
+}
+.box1{
+    background-color: green;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: red;
+}
