@@ -10,7 +10,8 @@ nav{
     gap: 20px;
     justify-content: space-between;
     padding-top: 10px;
-    position: fixed;
+    position: stiky;
+    top:0;
     width: 100%;
     z-index: 0;
 }
