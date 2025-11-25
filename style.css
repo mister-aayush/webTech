@@ -1,7 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin :0;
+    padding: 0;
+}
 nav{
     display:flex;
+    background-color: antiquewhite;
+    height: 40px;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 10px;
+    position: sticky;
+}
+nav .left-nav{
+   
+   
+    margin-left: 20px;
+}
+nav .left-nav a{
+   
+   text-decoration: none;
+    margin-left: 20px;
+}
+nav .left-nav a:hover{
+   
+     color: black;
+     font-size: large;
+ }
+ nav .right-nav ul{
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+    
+ }
+nav .right-nav ul li  {
+    
+    list-style: none;
+}
+nav .right-nav ul li a  {
+    
+    text-decoration: none;
+}
+nav .right-nav ul li a:hover  {
+    font-size: small;
+    color: black;
     
 }
+
+
+
 h1{
     text-align: center;
 }
