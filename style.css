@@ -10,7 +10,9 @@ nav{
     gap: 20px;
     justify-content: space-between;
     padding-top: 10px;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
 }
 nav .left-nav{
    
