@@ -79,4 +79,11 @@ display: flex;
 table{
     border: 1px solid black;
     border-collapse: collapse;
+    width: 500px;
+}
+table tr th{
+    border: 1px solid black;
+}
+table tr td{
+    border: 1px solid black;
 }
