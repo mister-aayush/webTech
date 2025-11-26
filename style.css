@@ -75,3 +75,8 @@ display: flex;
 .box3{
     background-color: red;
 }
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
