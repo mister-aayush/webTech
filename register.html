@@ -5,36 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <style>
-        .registration-form{
-            height: 500px;
-            width: 500px;
-            border: 1px solid black;
- 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        form{
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aaa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .registration-form {
+            background: white;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        form {
             display: flex;
             flex-direction: column;
-            margin: 50px;
         }
+
+        label {
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input {
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        button {
+            padding: 14px;
+            background: rgb(52, 52, 135);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+
+       
     </style>
 </head>
 <body>
     <div class="registration-form">
         <h1>Register here</h1>
         <form action="">
-            <label for="Name">First name:</label>
-            <input type="text" placeholder="first name" required>
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" placeholder="Enter first name" required>
 
-            <label for="Name">Last name:</label>
-            <input type="text" placeholder="last name" required>
+            <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" placeholder="Enter last name" required>
 
-            <label for="Name">Contact:</label>
-            <input type="text" placeholder="Contact" required>
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" placeholder="Enter contact number" required>
 
             <label for="email">Email:</label>
-            <input type="text" placeholder="email" required>
+            <input type="email" id="email" placeholder="Enter email address" required>
 
-            <button type="submit">submit </button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
