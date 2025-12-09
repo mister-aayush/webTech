@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web tech</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Modal Popup Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 40px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 450px;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+            line-height: 20px;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .modal-content h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .modal-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-content label {
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .modal-content input {
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        .modal-content input:focus {
+            outline: none;
+            border-color: rgb(52, 52, 135);
+        }
+
+        .modal-content button {
+            padding: 14px;
+            background: rgb(52, 52, 135);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .modal-content button:hover {
+            background: rgb(42, 42, 115);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left-nav"><a href="#">webTech</a></div>
+        <div class="right-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" id="registerBtn">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Registration Popup Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Register here</h1>
+            <form id="registerForm">
+                <label for="firstName">First name:</label>
+                <input type="text" id="firstName" placeholder="Enter first name" required>
+
+                <label for="lastName">Last name:</label>
+                <input type="text" id="lastName" placeholder="Enter last name" required>
+
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" placeholder="Enter contact number" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email address" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <h1>This is Heading. </h1>
+    <div class="box">
+        <div class="box1">This is green.</div>
+        <div class="box2">This is blue.</div>
+        <div class="box3">This is red.</div>
+    </div>
+
+    <table>
+        <tr>
+            <th rowspan="2">SN</th>
+            <th colspan="2">Name</th>
+            <th rowspan="2">Phone</th>
+            <th rowspan="2"> Email</th>
+        </tr>
+        <tr>
+            <th>First name</th>
+            <th>Lastname</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Akash</td>
+            <td>Shrestha</td>
+            <td>9878977</td>
+            <td>akash@gmail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Aayush</td>
+            <td>Shrestha</td>
+            <td>9878977</td>
+            <td>ayush@gmail.com</td>
+        </tr>
+    </table>
+
+    <script>
+        
+        const modal = document.getElementById('registerModal');
+        const registerBtn = document.getElementById('registerBtn');
+        const closeBtn = document.querySelector('.close');
+
+        const registerForm = document.getElementById('registerForm');
+
+        
+        registerBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        // Close butten
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Close when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Handle form submission
+        registerForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const contact = document.getElementById('contact').value;
+            const email = document.getElementById('email').value;
+            
+            alert(`Registration Successful!\n\nName: ${firstName} ${lastName}\nContact: ${contact}\nEmail: ${email}`);
+            
+            registerForm.reset();
+            modal.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
