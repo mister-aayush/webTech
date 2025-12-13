@@ -1,6 +1,6 @@
 <?php
 $numbers = array(40, 10, 30, 20);
-
+// without using built in fucntion
 echo "without using built in fuctioon <br>";
 echo "Before arranging: <br>";
 foreach($numbers as $value){
@@ -43,6 +43,24 @@ foreach ($numbers as $value) {
 }
 
 echo"<br>";
+//by using built in functions
+echo "<br>By using built in fuction <br>";
+echo "Before arranging: <br>";
+foreach($numbers as $value){
+    echo $value . " ";
+}
 
+sort($numbers);
 
+echo "<br>Ascending Order:<br>";
+foreach ($numbers as $value) {
+    echo $value . " ";
+}
+
+//descending
+rsort($numbers);
+echo "<br>Descending Order:<br>";
+foreach ($numbers as $value) {
+    echo $value . " ";
+}
 ?>
