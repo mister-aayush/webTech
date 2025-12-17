@@ -15,8 +15,6 @@
             <a href="">Home</a>
             <a href="">About</a>
             <a href="">Contact</a>
-            
-
         </div>
-        <div id="login-panel">login_panel</div>
+        <div id="login-panel">Login</div>
     </nav>
