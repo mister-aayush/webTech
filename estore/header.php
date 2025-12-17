@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav id="header">
-        <div>LOGO</div>
-        <div>navbar</div>
-        <div>login_panel</div>
+        <div id="logo">
+            jheeguStore
+        </div>
+        <div id="nav-bar">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            
+
+        </div>
+        <div id="login-panel">login_panel</div>
     </nav>
