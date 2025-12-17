@@ -1,0 +1,3 @@
+<?php 
+echo "LOgin secessful";
+?>

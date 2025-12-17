@@ -18,3 +18,13 @@
 #login-panel{
     padding-right: 50px;
 }
+
+
+/* loginpage css  */
+
+#login-page{
+    border: 1px solid black;
+    height: 200px;
+    width: 300px;
+}
+
