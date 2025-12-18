@@ -1,12 +1,10 @@
 <?php 
-session_start();
+
 include 'header.php';?>
-<div class="content">
+<div id="content">
     <?php 
-    $user = $_SESSION['user'];
-    echo 'Welcome $user';
+
+    echo 'hELOo ';
     ?>
 </div>
-echo "LOgin secessful";
-include 'footer.php';
-?>
+
