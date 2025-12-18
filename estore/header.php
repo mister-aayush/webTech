@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,5 +17,16 @@
             <a href="">About</a>
             <a href="">Contact</a>
         </div>
-        <div id="login-panel">Login</div>
+        <?php if(!empty($_SESSION['user'])){?>
+
+            <div id="logout">
+                <a href="login.php">Logout</a>
+            </div>
+
+         <?php ;}else{?>
+        <div id="login-panel">
+            <a href="login.php">Login</a>
+            <a href="#">Refisters</a>
+        </div>
+        <?php }?>
     </nav>
