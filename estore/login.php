@@ -1,4 +1,8 @@
 
+<?php 
+
+include 'header.php';
+?>
 <div id="login-page">
     <form action="login_handle.php" method="POST">
         <div id="username">

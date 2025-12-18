@@ -17,16 +17,18 @@
             <a href="">About</a>
             <a href="">Contact</a>
         </div>
-        <?php if(!empty($_SESSION['user'])){?>
-
-            <div id="logout">
-                <a href="login.php">Logout</a>
-            </div>
-
-         <?php ;}else{?>
-        <div id="login-panel">
-            <a href="login.php">Login</a>
-            <a href="#">Refisters</a>
-        </div>
-        <?php }?>
+        <?php
+        if(isset($_SESSION['username'])){
+            echo "Username:". $_SESSION['username']."";
+            echo '<div id="logout">';
+                echo '<a href="logout.php">'. $_SESSION['username'].'Logout</a>';
+            echo '</div>';
+        }else{
+            echo '<div id="login-panel">';
+                echo '<a href="login.php">  Login</a>';
+                echo '<a href="#">Registers</a>';
+            echo '</div>';
+        }
+        ?>
+        
     </nav>
