@@ -5,9 +5,15 @@ if(isset($_POST)){
     if(isset($_POST['full_name'])& !empty($_POST['full_name'])){
         $name =$_POST['full_name'];
     }else{
-        header("Location: register.php");
+        header("Location: register.php? name_empty=1");
     }
+
+    echo "<pre>";
+var_dump($_POST);
+echo "</pre>";
+
+exit();
 }else{
-    header("Location: dashoard.php");
+    header("Location: register.php");
 }
 ?>
