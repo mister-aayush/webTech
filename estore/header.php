@@ -26,7 +26,7 @@
         }else{
             echo '<div id="login-panel">';
                 echo '<a href="login.php">  Login</a>';
-                echo '<a href="#">Registers</a>';
+                echo '<a href="register.php">Registers</a>';
             echo '</div>';
         }
         ?>
