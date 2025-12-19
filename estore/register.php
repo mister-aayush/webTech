@@ -6,8 +6,8 @@
         <div id="full name">
             <label for="full_name">Full Name:</label>
             <?php
-            if(isset($_GET['full_name']) & !empty($_GET['full_name'])){?>
-            <span id="error">Please enter your full name</span>
+            if(isset($_GET['name_empty']) & !empty($_GET['name_empty'])){?>
+            <span id="c">Please enter your full name</span>
             <?php
             }
             ?>

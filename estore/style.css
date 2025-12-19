@@ -66,8 +66,11 @@
     font-size: 16px;
     font-weight: 600;
     
-    
+}
 
+/* reister */
+#error{
+    color: red;
 }
 
 /* home  */
@@ -86,5 +89,6 @@
     padding: 10px;
     margin: 1px;
 }
+
 /* footer css */
 
