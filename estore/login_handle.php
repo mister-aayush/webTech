@@ -13,8 +13,8 @@ $password =$_POST['password'];
 
 
 if($username=="admin" && $password== "secret"){
-    $_SESSION['username']= 'admin'; // storing the value to the session
-
+    $_SESSION['username']= 'admin'; 
+    // storing the value to the session
     header("Location: dashboard.php");
 }elseif($username=="customer" && $password == "123"){
     $_SESSION['username']= 'customer'; // storing the value to the session
