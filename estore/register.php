@@ -3,7 +3,7 @@
 
 <div id="login-page">
     <form action="registration_process.php" method="POST">
-        <div id="full name">
+        <div id="full_name">
             <label for="full_name">Full Name:</label>
             <?php
             if(isset($_GET['name_empty']) & !empty($_GET['name_empty'])){?>
