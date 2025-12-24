@@ -12,9 +12,9 @@ if(isset($_POST)){
  $name = $_POST['full_name'];
  $phone = $_POST['phone'];
  $email = $_POST['email'];
- $password = $_POST['password'];
+ $password = password_hash($_POST['password'],PASSWORD_DEFAULT) ;
 
-// insert name ohone email pw in db
+// insert name phone email pw in db
 
 $query = "INSERT INTO user(name,phone,email,password)
             values('$name','$phone','$email','$password')";
