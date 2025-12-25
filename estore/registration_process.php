@@ -19,7 +19,7 @@ if(isset($_POST)){
 $query = "INSERT INTO user(name,phone,email,password)
             values('$name','$phone','$email','$password')";
 $res = mysqli_query($dbconnection,$query);
-if($res){
+if($res){ 
 
    header("Location: login.php");
 }else{

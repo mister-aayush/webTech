@@ -7,7 +7,7 @@ include 'header.php';
     <form action="login_handle.php" method="POST">
         <div id="username">
             <label for="username">Username</label>
-            <input type="text" name="username" id="username" placeholder="usernmae">
+            <input type="text" name="email" id="username" placeholder="usernmae">
         </div>
 
         <div id="password">
