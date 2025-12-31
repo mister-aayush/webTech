@@ -1,4 +1,4 @@
-<?php include 'header.php';?>
+
 
 
 <div id="login-page">
@@ -25,11 +25,11 @@
 
         <div id="input-field">
             <label for="image">Image:</label>
-            <input type="text" name="image" id="image">
+            <input type="file" name="image" id="image">
         </div>
 
         <div id="login-btn">
-            <button type="submit">Register</button>
+            <button type="submit">ADD</button>
         </div>
     </form>
 </div>
