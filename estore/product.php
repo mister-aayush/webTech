@@ -13,7 +13,6 @@ include 'database.php';
             <p><?php echo $product['product_name']?></p>
             <p><?php echo $product['price']?></p>
             <p><?php echo $product['description']?></p>
-          
         </div>
         <?php
         } 
