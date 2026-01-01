@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+/* header css */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: antiquewhite;
+
+}
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1;
+}
+#nav-bar {
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#login-panel {
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+}
+
+
+/* loginpage css  */
+
+#login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    min-height: 100vh;
+    
+}
+#login-page form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+#username ,#password{
+    margin-bottom:20px;
+}
+
+
+
+#login-btn button {
+    width: 100%;
+    padding: 12px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+/* reister */
+
+
+#error{
+    color: red;
+}
+
+#full_name ,#number,#email,#password{
+    margin-bottom:20px;
+}
+#login-btn button {
+    width: 100%;
+    padding: 12px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+
+/* home  */
+.container{
+    height: 500px;
+    width: 100%; 
+    display:grid;
+    grid-template-columns: 100px auto 200px;
+    padding: 10px;
+    
+   
+}
+.box{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    margin: 1px;
+}
+
+/* footer css */
+
