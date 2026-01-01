@@ -18,7 +18,7 @@ if($count==1){
     if(password_verify($password,$row['password'])){
         
          $_SESSION['username']= $row['name']; // storing the value to the session
-        header("Location: home.php");
+        header("Location: dashboard.php");
     }
 }else{
     echo "invalid username or password";

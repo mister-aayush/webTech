@@ -1,5 +1,5 @@
 
-
+<?php include 'header.php'; ?>
 
 <div id="login-page">
     <form action="product-process.php" method="POST">

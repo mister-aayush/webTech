@@ -14,12 +14,12 @@
         </div>
         <div id="nav-bar">
             <a href="index.php">Home</a>
-            <a href="">About</a>
+            <a href="add-product-form.php">Add-Product</a>
             <a href="">Contact</a>
         </div>
         <?php
         if(isset($_SESSION['username'])){
-            echo "Username:". $_SESSION['username']."  :";
+            echo "Admin:". $_SESSION['username']."  :";
             echo '<div id="logout">';
                 echo '<a href="logout.php">'.'Logout</a>';
             echo '</div>';
