@@ -1,8 +1,8 @@
 
 <?php include 'header.php'; ?>
 
-<div id="login-page">
-    <form action="product-process.php" method="POST">
+<div id="addProduct">
+    <form action="product-process.php" method="POST" enctype="multipart/form-data">
         <div id="input-field">
             <label for="name"> Name:</label>
             <input type="text" name="name" id="name">
