@@ -1,5 +1,9 @@
 <?php
 require 'database.php';
+if($_SERVER['REQUEST_METHOD'] != 'POST'){
+    header('Location: dashboard.php');
+    exit();
+}
 if(isset($_POST)){
     //valdation
     // $name = $phone=$email = $password= "";
@@ -36,6 +40,7 @@ $res = mysqli_query($dbconnection,$query);
 if($res){ 
 
    echo "<script>alert('Data added successfully');</script>";
+   header("Location: dashboard.php");
 }else{
     echo "reigster unsucessful";
 }
