@@ -30,7 +30,7 @@ if($count==1){
     // die;
     if(password_verify($password,$row['password'])){
 
-        //  $_SESSION['username']= $row['name']; // storing the value to the session
+         $_SESSION['username']= $row['name']; // storing the value to the session
          
          $_SESSION['is_loggedin'] = true;
          header("Location: dashboard.php");
