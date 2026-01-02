@@ -13,19 +13,31 @@ if(isset($_POST)){
  $description = $_POST['description'];
  $price = $_POST['price'];
  $quantity = $_POST['quantity'];
- $image = $_POST['image'];
+ $image = $_FILES['image'];
+
+//image uplods to folder 
+ if(isset($image) && $image['error'] == 0){
+    $upload_dir = "image/";
+    $image_name =  basename($image['name']);
+    $target_path = $upload_dir . $image_name;
+
+    if(move_uploaded_file($image['tmp_name'], $target_path )){
+        $image_path  = $target_path;
+    }
+}
+
 
 
 // insert into db
 
-$query = "INSERT INTO product(name,description,price,quantity)
-            values('$name','$description','$quantity','$image')";
+$query = "INSERT INTO product(name,description,price,quantity,image)
+            values('$name','$description','$price','$quantity','$image_path')";
 $res = mysqli_query($dbconnection,$query);
 if($res){ 
 
    echo "<script>alert('Data added successfully');</script>";
 }else{
-    echo "reigster unsecessful";
+    echo "reigster unsucessful";
 }
 
 

@@ -144,7 +144,6 @@ form {
     border-color: #007bff;
 }
 
-
 #login-btn {
     text-align: center;
     margin-top: 20px;
@@ -164,9 +163,6 @@ form {
 #login-btn button:hover {
     background: #0056b3;
 }
-
-
-
 
 /* footer css */
 
