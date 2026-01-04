@@ -32,6 +32,14 @@ if ($is_LoggedIn == 1) {
         $datas[] = $row;
       }
       ?>
+      <thead> 
+        <th>Name</th> 
+        <th>Description</th> 
+        <th>Price</th> 
+        <th>Quantity</th> 
+        <th>Image</th> 
+        <th>Edit/Delete</th>
+     </thead>
 
       <?php foreach ($datas as $item): ?>
         <tr>
@@ -43,9 +51,9 @@ if ($is_LoggedIn == 1) {
             <img src="uploads/<?php echo $item['image']; ?>" width="60">
           </td>
           <td>
-            <a href="edit-product.php?id=1">
-              Edit
-            </a>
+          <a href="edit-product.php?id=<?php echo $item['ID']; ?>">
+            Edit
+          </a>
           </td>
         </tr>
       <?php endforeach; ?>

@@ -1,8 +1,7 @@
-
-    <div id="footer">
-        <div>
-            &copyright@2025
-        </div>
+<div id="footer">
+    <div>
+        &copy; 2025
     </div>
+</div>
 </body>
 </html>

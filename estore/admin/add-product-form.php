@@ -1,29 +1,28 @@
-
 <?php include 'header.php'; ?>
 
 <div id="addProduct">
     <form action="product-process.php" method="POST" enctype="multipart/form-data">
-        <div id="input-field">
-            <label for="name"> Name:</label>
+        <div class="input-field">
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name">
         </div>
 
-        <div id="input-field">
+        <div class="input-field">
             <label for="description">Description:</label>
-            <input type="text" name="description" id="product-description" >
+            <input type="text" name="description" id="product-description">
         </div>
 
-        <div id="input-field">
-            <label for="phone">Price:</label>
-            <input type="text" name="price" id="product_price" >
+        <div class="input-field">
+            <label for="price">Price:</label>
+            <input type="text" name="price" id="product_price">
         </div>
         
-        <div id="input-field">
-            <label for="quantity ">Quantity:</label>
-            <input type="text" name="quantity" >
+        <div class="input-field">
+            <label for="quantity">Quantity:</label>
+            <input type="text" name="quantity">
         </div>
 
-        <div id="input-field">
+        <div class="input-field">
             <label for="image">Image:</label>
             <input type="file" name="image" id="image">
         </div>
@@ -33,3 +32,5 @@
         </div>
     </form>
 </div>
+
+<?php include 'footer.php'; ?>
