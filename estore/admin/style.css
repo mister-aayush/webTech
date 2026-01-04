@@ -160,51 +160,22 @@ form {
     cursor: pointer;
 }
 
+
 #login-btn button:hover {
     background: #0056b3;
 }
 
-/* dashboard */
-/* dashboard display table */
 
 /* Dashboard table styling */
-.display-table {
-    padding: 20px;
-}
-
-.display-table table {
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    width: 90%;
+.table-wrapper {
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
 }
 
-.display-table table tr {
-    border-bottom: 1px solid #ddd;
-}
 
-.display-table table td {
-    padding: 12px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
 
-.display-table table tr:hover {
-    background-color: #f5f5f5;
-}
 
-.display-table table td a {
-    color: #007bff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid #007bff;
-    border-radius: 4px;
-}
-
-.display-table table td a:hover {
-    background-color: #007bff;
-    color: white;
-}
 /* footer css */
 

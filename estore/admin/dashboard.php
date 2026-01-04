@@ -32,14 +32,14 @@ if ($is_LoggedIn == 1) {
         $datas[] = $row;
       }
       ?>
-      <thead> 
-        <th>Name</th> 
-        <th>Description</th> 
-        <th>Price</th> 
-        <th>Quantity</th> 
-        <th>Image</th> 
+      <thead>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Image</th>
         <th>Edit/Delete</th>
-     </thead>
+      </thead>
 
       <?php foreach ($datas as $item): ?>
         <tr>
@@ -48,12 +48,19 @@ if ($is_LoggedIn == 1) {
           <td><?php echo $item['price']; ?></td>
           <td><?php echo $item['quantity']; ?></td>
           <td>
-            <img src="uploads/<?php echo $item['image']; ?>" width="60">
+            <?php if (!empty($item['image']) && file_exists($item['image'])): ?>
+              <img src="<?php echo htmlspecialchars($item['image']); ?>" alt="Product Image" class="product-image">
+            <?php else: ?>
+              <div class="no-image">No Image</div>
+            <?php endif; ?>
           </td>
           <td>
-          <a href="edit-product.php?id=<?php echo $item['ID']; ?>">
-            Edit
-          </a>
+            <a href="edit-product.php?id=<?php echo $item['ID']; ?>">
+              Edit
+            </a>
+            <a href="delete-product.php?id=<?php echo $item['ID']; ?>">
+              Delete
+            </a>
           </td>
         </tr>
       <?php endforeach; ?>
