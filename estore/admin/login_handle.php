@@ -2,10 +2,7 @@
 session_start();
 require_once 'database.php';
 
-if($_SERVER['REQUEST_METHOD'] != 'POST'){
-    header('Location: login.php');
-    exit();
-}
+
 
 
 
@@ -29,6 +26,7 @@ if($count==1){
     // echo "</pre>";
     // die;
     if(password_verify($password,$row['password'])){
+        
 
          $_SESSION['username']= $row['name']; // storing the value to the session
          
