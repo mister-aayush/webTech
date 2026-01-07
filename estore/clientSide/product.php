@@ -39,7 +39,7 @@ $res = mysqli_query($dbconnection, $query);
           </td>
           <td>
             <a href="add-to-cart.php?product_id=<?php echo $item['ID']; ?>">
-              BUY
+              BUY now
             </a>
             
           </td>
