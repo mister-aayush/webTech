@@ -16,6 +16,7 @@
             <a href="index.php">Home</a>
             <a href="add-product-form.php">Add-Product</a>
             <a href="">Contact</a>
+            
         </div>
         <?php
         if(isset($_SESSION['username'])){

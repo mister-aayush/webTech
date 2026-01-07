@@ -16,10 +16,11 @@
             <a href="index.php">Home</a>
             <a href="">About</a>
             <a href="">Contact</a>
+            <a href="add-to-cart.php?product_id=<?php echo $product['ID'];?>">Cart</a>
         </div>
         <?php
         if(isset($_SESSION['username'])){
-            echo "Username:". $_SESSION['username']."  :";
+            echo "Username:". $_SESSION['username']." :";
             echo '<div id="logout">';
                 echo '<a href="logout.php">'.'Logout</a>';
             echo '</div>';

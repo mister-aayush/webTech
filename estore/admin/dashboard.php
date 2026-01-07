@@ -38,7 +38,7 @@ if ($is_LoggedIn == 1) {
         <th>Price</th>
         <th>Quantity</th>
         <th>Image</th>
-        <th>Edit/Delete</th>
+        <th>Edit/Delete</th>  
       </thead>
 
       <?php foreach ($datas as $item): ?>
