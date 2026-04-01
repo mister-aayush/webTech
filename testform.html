@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Purchase Form</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+        <br><br>
+        
+        <label>Book Subject:</label><br>
+        <input type="radio" id="fiction" name="subject" value="fiction" required>
+        <label for="fiction">Fiction</label><br>
+        <input type="radio" id="non-fiction" name="subject" value="non-fiction">
+        <label for="non-fiction">Non-Fiction</label><br>
+        <input type="radio" id="science" name="subject" value="science">
+        <label for="science">Science</label><br>
+        <input type="radio" id="history" name="subject" value="history">
+        <label for="history">History</label><br>
+        <input type="radio" id="biography" name="subject" value="biography">
+        <label for="biography">Biography</label>
+        <br><br>
+        
+        <label for="author">Favorite Author:</label>
+        <select id="author" name="author" required>
+            <option value="">-- Select an Author --</option>
+            <option value="jk-rowling">J.K. Rowling</option>
+            <option value="stephen-king">Stephen King</option>
+            <option value="agatha-christie">Agatha Christie</option>
+            <option value="dan-brown">Dan Brown</option>
+            <option value="george-orwell">George Orwell</option>
+            <option value="jane-austen">Jane Austen</option>
+            <option value="mark-twain">Mark Twain</option>
+            <option value="tolkien">J.R.R. Tolkien</option>
+        </select>
+        <br><br>
+        
+        <button type="submit">Submit Order</button>
+    </form>
+</body>
+</html>
